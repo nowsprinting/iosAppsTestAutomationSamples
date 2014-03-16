@@ -1,0 +1,53 @@
+PODS:
+  - CocoaAsyncSocket (7.3.4)
+  - CocoaHTTPServer (2.3):
+    - CocoaAsyncSocket
+    - CocoaLumberjack
+  - CocoaLumberjack (1.8.1):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.8.1)
+  - CocoaLumberjack/Extensions (1.8.1):
+    - CocoaLumberjack/Core
+  - GenerateTestCoverageFor_iOS7 (0.1.0)
+  - GHUnitIOS (0.5.8)
+  - KIF (2.0.0)
+  - Kiwi/ARC (2.2.3)
+  - Kiwi/NonARC (2.2.3)
+  - Kiwi/XCTest (2.2.3):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - NLTHTTPStubServer (0.4.0):
+    - CocoaHTTPServer (>= 2.3)
+  - OCHamcrest (3.0.1)
+  - OCMock (2.2.3)
+  - OCMockito (1.1.0):
+    - OCHamcrest (~> 3.0)
+  - tuneup_js (1.0.1)
+
+DEPENDENCIES:
+  - GenerateTestCoverageFor_iOS7
+  - GHUnitIOS
+  - GHUnitIOS (~> 0.5.8)
+  - KIF (~> 2.0)
+  - Kiwi/XCTest
+  - NLTHTTPStubServer
+  - OCHamcrest (~> 3.0)
+  - OCMock (~> 2.2)
+  - OCMockito (~> 1.0)
+  - tuneup_js
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 534d09416f992fd51efb23f534742ce70b3a7999
+  CocoaHTTPServer: 7c2fce6617f7fda0e3f4fc34f96e562caa7c7bd8
+  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
+  GenerateTestCoverageFor_iOS7: 14b5713e0c476b46fec69f98a754a892ba78fc5f
+  GHUnitIOS: 23167e22b8abe162d71f86bd4bda7550e53414cb
+  KIF: ff3b46deb62ce3f8e99c6a2c786729e1eea241ba
+  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  NLTHTTPStubServer: 6ed2b40b128c4fcc215352b604fae2f7f99110d2
+  OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
+  OCMock: 74e4ddbcef134170dcc844f91c691f13868075d7
+  OCMockito: 317fa0cf75c9b0d73d2be335789c556537be7fd2
+  tuneup_js: 87dae4e2342d84c30ebe3863331bd24c1a6527c0
+
+COCOAPODS: 0.29.0
