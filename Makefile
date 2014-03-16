@@ -33,7 +33,7 @@ coverage-and-gcovr: coverage
 
 send-to-coveralls:
 	coveralls \
-		--exclude Pods --exclude-pattern ".*Tests" --exclude-pattern ".*\.h"
+		--exclude Pods --exclude-pattern ".*Tests" --exclude-pattern ".*\.h" \
 		--repo-token 9ig1boI707fjkhwNBgVtTwOVFREPGVHeT
 
 oclint:
