@@ -141,6 +141,9 @@
     _sut.gender = GenderFemale;
     _sut.age    = 3;
     XCTAssertEqual(DivisionNone, [_sut division], @"分類外であること");
+
+    _sut.age    = -1;
+    XCTAssertEqual(DivisionNone, [_sut division], @"分類外であること");
 }
 
 @end

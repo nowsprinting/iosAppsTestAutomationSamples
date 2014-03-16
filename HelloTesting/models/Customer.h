@@ -44,7 +44,7 @@ typedef NS_ENUM(NSUInteger, Division){
 @property(nonatomic, assign) Gender gender;
 
 /** 年齢 */
-@property(nonatomic, assign) NSUInteger age;
+@property(nonatomic, assign) NSInteger age;
 
 /**
  * マーケティング区分を返す
