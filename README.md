@@ -1,5 +1,8 @@
-#iOSアプリ テスト自動化入門 サンプルコード
+#iOSアプリ テスト自動化入門 サンプル
+[![Build Status](https://travis-ci.org/nowsprinting/iosAppsTestAutomationSamples.png?branch=master)](https://travis-ci.org/nowsprinting/iosAppsTestAutomationSamples)
+[![Coverage Status](https://coveralls.io/repos/nowsprinting/iosAppsTestAutomationSamples/badge.png)](https://coveralls.io/r/nowsprinting/iosAppsTestAutomationSamples)
 [![Gitter](https://badges.gitter.im/nowsprinting/iosAppsTestAutomationSamples.png)](https://gitter.im/nowsprinting/iosAppsTestAutomationSamples)
+
 
 『[iOSアプリ テスト自動化入門](http://www.amazon.co.jp/exec/obidos/ASIN/4798040894/nowsprinting-22/)』のサンプルコードです。
 
@@ -28,7 +31,7 @@
 
 ###5.3 Frank
 
-Frankのインストール、`frank setup`、`frank build`を実行してから、`cucumber`コマンドで実行してください。プロジェクトの設定など詳しくは書籍を参照してください。
+Frankのインストール、`frank setup`、`frank build`を実行してから、`cucumber`コマンドで実行してください。プロジェクトのビルド設定などの詳細は書籍を参照してください。
 
 
 ###7.1 OS X Server/Bots
