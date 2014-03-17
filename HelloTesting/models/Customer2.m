@@ -30,7 +30,7 @@
 }
 
 /** 年齢は生年月日から算出する */
-- (NSUInteger)age{
+- (NSInteger)age{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"];
     dateFormatter.timeZone = [NSTimeZone timeZoneWithName:@"JST"];
@@ -45,7 +45,7 @@
     }
 }
 
-- (void)setAge:(NSUInteger)age{
+- (void)setAge:(NSInteger)age{
     super.age = age;
 }
 

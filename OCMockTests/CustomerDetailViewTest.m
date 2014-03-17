@@ -20,7 +20,7 @@
     id customer = [OCMockObject mockForClass:[Customer class]];
     [[[customer stub] andReturn:@"岩田 貫一"] name];
     [[[customer stub] andReturn:@"myemailaddress@example.com"] mail];
-    [[[customer stub] andReturnValue:OCMOCK_VALUE((NSUInteger){33})] age];
+    [[[customer stub] andReturnValue:OCMOCK_VALUE((NSInteger){33})] age];
     [[[customer stub] andReturn:@"男性"] genderString];
     [[[customer stub] andReturn:@"M1層"] divisionString];
     [[[customer stub] andReturnValue:OCMOCK_VALUE((BOOL){YES})] isInDivision:DivisionM1];
