@@ -1,9 +1,6 @@
 language: objective-c
 
 before_install:
-  - rvm get stable
-  - rvm use ruby-2.0.0-p247
-  - gem install cocoapods
   - sudo easy_install cpp-coveralls
 
 script:
