@@ -1,4 +1,4 @@
-DESTINATION = "name=iPhone Retina (4-inch),OS=7.0"
+DESTINATION = "name=iPhone Retina (4-inch),OS=7.1"
 export PATH := ${PATH}:/usr/local/bin:~/oclint/bin
 
 test:

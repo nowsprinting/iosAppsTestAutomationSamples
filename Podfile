@@ -23,5 +23,5 @@ target :NLTHTTPStubServerTests, :exclusive => true do
     pod 'NLTHTTPStubServer'
 end
 target :KIFTests, :exclusive => true do
-    pod 'KIF', '~> 2.0'
+    pod 'KIF', '~> 3.0'
 end
