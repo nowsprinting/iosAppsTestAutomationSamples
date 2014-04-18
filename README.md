@@ -4,7 +4,17 @@
 [![Gitter](https://badges.gitter.im/nowsprinting/iosAppsTestAutomationSamples.png)](https://gitter.im/nowsprinting/iosAppsTestAutomationSamples)
 
 
-『[iOSアプリ テスト自動化入門](http://www.amazon.co.jp/exec/obidos/ASIN/4798040894/nowsprinting-22/)』のサンプルコードです。
+書籍『
+<a href="http://www.amazon.co.jp/gp/product/4798040894/ref=as_li_ss_tl?ie=UTF8&camp=247&creative=7399&creativeASIN=4798040894&linkCode=as2&tag=nowsprinting-22">iOSアプリ テスト自動化入門</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=nowsprinting-22&l=as2&o=9&a=4798040894" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+』（秀和システム）のサンプルコードです。
+
+<a href="http://www.amazon.co.jp/gp/product/4798040894/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4798040894&linkCode=as2&tag=nowsprinting-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4798040894&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=nowsprinting-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=nowsprinting-22&l=as2&o=9&a=4798040894" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+
+書籍について、また、サンプルコード以外の訂正・変更箇所については、以下のブログエントリを参照してください。
+
+- [iOSアプリのテスト自動化本を執筆しました - やらなイカ？](http://nowsprinting.hatenablog.com/entry/2014/02/12/104959)
+- [iOSアプリ テスト自動化入門 のサポート - やらなイカ？](http://nowsprinting.hatenablog.com/entry/2014/03/18/115911)
 
 
 
