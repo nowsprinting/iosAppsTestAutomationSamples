@@ -1,6 +1,6 @@
 #iOSアプリ テスト自動化入門 サンプル
-[![Build Status](https://travis-ci.org/nowsprinting/iosAppsTestAutomationSamples.png?branch=master)](https://travis-ci.org/nowsprinting/iosAppsTestAutomationSamples)
-[![Coverage Status](https://coveralls.io/repos/nowsprinting/iosAppsTestAutomationSamples/badge.png)](https://coveralls.io/r/nowsprinting/iosAppsTestAutomationSamples)
+[![Build Status](https://travis-ci.org/nowsprinting/iosAppsTestAutomationSamples.svg?branch=master)](https://travis-ci.org/nowsprinting/iosAppsTestAutomationSamples)
+[![Coverage Status](https://coveralls.io/repos/nowsprinting/iosAppsTestAutomationSamples/badge.png?branch=master)](https://coveralls.io/r/nowsprinting/iosAppsTestAutomationSamples?branch=master)
 [![Gitter](https://badges.gitter.im/nowsprinting/iosAppsTestAutomationSamples.png)](https://gitter.im/nowsprinting/iosAppsTestAutomationSamples)
 
 
