@@ -27,6 +27,9 @@ instrumentscli*.trace/
 Frank/*
 !Frank/features
 
+#MonkeyTalk
+libMonkeyTalk*.a
+
 #Reports
 *-reports/
 compile_commands.json

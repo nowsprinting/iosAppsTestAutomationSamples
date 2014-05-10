@@ -44,6 +44,13 @@
 Frankのインストール、`frank setup`、`frank build`を実行してから、`cucumber`コマンドで実行してください。プロジェクトのビルド設定などの詳細は書籍を参照してください。
 
 
+###5.4 MonkeyTalk
+
+**5.4.4 MonkeyTalkエージェントのアプリへの組み込み** の手順で追加したビルドターゲット`HelloTestingWithMonkeyTalkAgent`がありますが、MonkeyTalkエージェントは同梱していません。
+
+ビルドターゲット設定の"Build Phases"->"Link Binary With Libraries"で、MonkeyTalkエージェントのスタティックライブラリファイルパスを設定してご利用ください。
+
+
 ###7.1 OS X Server/Bots
 
 このサンプルプロジェクトをOS X Server/Botsでビルドする場合、`.gitignore`ファイルの以下の行を削除し、Pods/ディレクトリ下のファイルをリポジトリに追加してください。
