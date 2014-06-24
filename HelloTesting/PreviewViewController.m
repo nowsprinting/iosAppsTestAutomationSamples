@@ -32,7 +32,23 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
+    NSError *error = nil;
     
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"CustomerPreview" ofType:@"html"];
+    NSString *template = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:&error];
+    if(!error){
+        NSString *name = self.detailItem.name;
+        NSString *mail = self.detailItem.mail;
+        NSString *gender = self.detailItem.genderString;
+        NSString *age = [NSString stringWithFormat:@"%d", self.detailItem.age];
+        NSString *division = self.detailItem.divisionString;
+        NSString *body = [NSString stringWithFormat:template, name, mail, gender, age, division];
+        [self.webView loadHTMLString:body baseURL:nil];
+        
+    }else{
+        NSLog(@"error domain:%@, code:%d", error.domain, error.code);
+    }
+
     if (self.detailItem) {
         //self.detailDescriptionLabel.text = [self.detailItem description];
     }

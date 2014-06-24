@@ -115,6 +115,11 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    if(textField==self.name){
+        self.detailItem.name = textField.text;
+    }else{
+        self.detailItem.mail = textField.text;
+    }
     [textField resignFirstResponder];
     return YES;
 }
@@ -156,6 +161,16 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+}
+
+
+#pragma mark - segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showPreview"]) {
+        [[segue destinationViewController] setDetailItem:self.detailItem];
+    }
 }
 
 @end
