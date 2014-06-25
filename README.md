@@ -46,9 +46,10 @@ Frankのインストール、`frank setup`、`frank build`を実行してから�
 
 ###5.4 MonkeyTalk
 
-**5.4.4 MonkeyTalkエージェントのアプリへの組み込み** の手順で追加したビルドターゲット`HelloTestingWithMonkeyTalkAgent`がありますが、MonkeyTalkエージェントは同梱していません。
+**5.4.4 MonkeyTalkエージェントのアプリへの組み込み** の手順で追加したビルドターゲット `HelloTestingWithMonkeyTalkAgent`を追加していますが、MonkeyTalkのエージェントのスタティックライブラリは同梱してありません。  
+ビルドターゲット設定の"Build Phases"->"Link Binary With Libraries"で、MonkeyTalkエージェントのファイルパスを設定してご利用ください。
 
-ビルドターゲット設定の"Build Phases"->"Link Binary With Libraries"で、MonkeyTalkエージェントのスタティックライブラリファイルパスを設定してご利用ください。
+また、当サンプルコードを操作するテストスクリプトをMonkeyTalk/ディレクトリ下に追加しました。
 
 
 ###7.1 OS X Server/Bots
