@@ -1,18 +1,18 @@
 PODS:
-  - CocoaAsyncSocket (7.3.4)
+  - CocoaAsyncSocket (7.3.5)
   - CocoaHTTPServer (2.3):
     - CocoaAsyncSocket
     - CocoaLumberjack
-  - CocoaLumberjack (1.8.1):
+  - CocoaLumberjack (1.9.0):
     - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (1.8.1)
-  - CocoaLumberjack/Extensions (1.8.1):
+  - CocoaLumberjack/Core (1.9.0)
+  - CocoaLumberjack/Extensions (1.9.0):
     - CocoaLumberjack/Core
   - GenerateTestCoverageFor_iOS7 (1.0.0)
   - GHUnitIOS (0.5.8)
-  - KIF (3.0.2):
+  - KIF (3.0.5):
     - KIF/XCTest
-  - KIF/XCTest (3.0.2)
+  - KIF/XCTest (3.0.5)
   - Kiwi/ARC (2.2.4)
   - Kiwi/NonARC (2.2.4)
   - Kiwi/XCTest (2.2.4):
@@ -20,11 +20,13 @@ PODS:
     - Kiwi/NonARC
   - NLTHTTPStubServer (0.4.0):
     - CocoaHTTPServer (>= 2.3)
-  - OCHamcrest (3.0.1)
+  - OCHamcrest (4.0.1)
   - OCMock (2.2.4)
-  - OCMockito (1.2.0):
-    - OCHamcrest (~> 3.0)
-  - tuneup_js (1.0.1)
+  - OCMockito (1.3.0):
+    - OCHamcrest (~> 4.0)
+    - TPWeakProxy (~> 1.0)
+  - TPWeakProxy (1.0.0)
+  - tuneup_js (1.2.0)
 
 DEPENDENCIES:
   - GenerateTestCoverageFor_iOS7
@@ -33,23 +35,24 @@ DEPENDENCIES:
   - KIF (~> 3.0)
   - Kiwi/XCTest
   - NLTHTTPStubServer
-  - OCHamcrest (~> 3.0)
+  - OCHamcrest (~> 4.0)
   - OCMock (~> 2.2)
   - OCMockito (~> 1.0)
   - tuneup_js
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: 534d09416f992fd51efb23f534742ce70b3a7999
-  CocoaHTTPServer: 7c2fce6617f7fda0e3f4fc34f96e562caa7c7bd8
-  CocoaLumberjack: 020378ec400d658923bf5887178394f65f052c90
-  GenerateTestCoverageFor_iOS7: 364d42cdaf97eac01dee4b21ff6bc80d8461b92f
-  GHUnitIOS: 23167e22b8abe162d71f86bd4bda7550e53414cb
-  KIF: 4dfc8fb58db542f66dd337bd9bdb8bddba233c29
-  Kiwi: d60d7498b640a16f58b01925fc3c8d7c4d809f66
-  NLTHTTPStubServer: 6ed2b40b128c4fcc215352b604fae2f7f99110d2
-  OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
-  OCMock: 5008fae4b4789b8fc3e48cd7660f2eb5ef8ce89e
-  OCMockito: 050fca9528760faa8b5fafc82faad9d54f0864c0
-  tuneup_js: 9980756ccbc77a48e690bf84a3a1be79cff3747c
+  CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
+  CocoaHTTPServer: 217df4cba4e48803db2480f97b805aaad2230dd1
+  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
+  GenerateTestCoverageFor_iOS7: f7e95c2e6641d49fbbba4c2b427611a28110935a
+  GHUnitIOS: 0fe5a01896673a7768ee76158fbae02ad8fde853
+  KIF: ad5ddd4e8cb213e6b3e2e166fba9308e3b542e6e
+  Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
+  NLTHTTPStubServer: 3e5f9a5e7ce69670a6b2a04578956cdc41c31e85
+  OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
+  OCMock: 6db79185520e24f9f299548f2b8b07e41d881bd5
+  OCMockito: eca2670b3ce4a457d316b046a36d6f2b980a4da7
+  TPWeakProxy: a23251ba7fbe268c93f809cc072ef834f5063798
+  tuneup_js: 6480db5316a17f8793638d307fa0b6fd686f9cdc
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.33.1

@@ -10,7 +10,7 @@ target :KiwiTests, :exclusive => true do
     pod 'Kiwi/XCTest'
 end
 target :OCHamcrestTests, :exclusive => true do
-    pod 'OCHamcrest', '~> 3.0'
+    pod 'OCHamcrest', '~> 4.0'
 end
 target :OCMockTests, :exclusive => true do
     pod 'OCMock', '~> 2.2'
