@@ -29,6 +29,9 @@ Frank/*
 
 #MonkeyTalk
 libMonkeyTalk*.a
+MonkeyTalk/libs/
+MonkeyTalk/reports/
+MonkeyTalk/screenshots/
 
 #Reports
 *-reports/
