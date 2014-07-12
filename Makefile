@@ -17,8 +17,9 @@ frank-test:
 	cucumber --format junit --out cucumber-reports Frank/features
 
 coverage:
-	xcodebuild -workspace HelloTesting.xcworkspace -scheme HelloTesting \
+	xctool -workspace HelloTesting.xcworkspace -scheme HelloTesting \
 		-sdk iphonesimulator -destination ${DESTINATION} \
+		-reporter junit:test-reports/xctest-report.xml \
 		GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
 		GCC_GENERATE_TEST_COVERAGE_FILES=YES \
 		OTHER_CFLAGS="-DUSE_GCOV_FLUSH" \
