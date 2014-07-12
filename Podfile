@@ -1,7 +1,6 @@
 platform :ios, '6.0'
 
 pod 'tuneup_js'
-pod 'GenerateTestCoverageFor_iOS7'
 
 target :GHUnitTests, :exclusive => true do
     pod 'GHUnitIOS', '~> 0.5.8'

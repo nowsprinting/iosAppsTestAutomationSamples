@@ -3,12 +3,11 @@ PODS:
   - CocoaHTTPServer (2.3):
     - CocoaAsyncSocket
     - CocoaLumberjack
-  - CocoaLumberjack (1.9.0):
+  - CocoaLumberjack (1.9.1):
     - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (1.9.0)
-  - CocoaLumberjack/Extensions (1.9.0):
+  - CocoaLumberjack/Core (1.9.1)
+  - CocoaLumberjack/Extensions (1.9.1):
     - CocoaLumberjack/Core
-  - GenerateTestCoverageFor_iOS7 (1.0.0)
   - GHUnitIOS (0.5.8)
   - KIF (3.0.5):
     - KIF/XCTest
@@ -29,7 +28,6 @@ PODS:
   - tuneup_js (1.2.0)
 
 DEPENDENCIES:
-  - GenerateTestCoverageFor_iOS7
   - GHUnitIOS
   - GHUnitIOS (~> 0.5.8)
   - KIF (~> 3.0)
@@ -43,8 +41,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   CocoaHTTPServer: 217df4cba4e48803db2480f97b805aaad2230dd1
-  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
-  GenerateTestCoverageFor_iOS7: f7e95c2e6641d49fbbba4c2b427611a28110935a
+  CocoaLumberjack: 94accd5749f5c5d15134c8d50f34a973aed8ef69
   GHUnitIOS: 0fe5a01896673a7768ee76158fbae02ad8fde853
   KIF: ad5ddd4e8cb213e6b3e2e166fba9308e3b542e6e
   Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
