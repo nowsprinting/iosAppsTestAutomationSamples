@@ -51,6 +51,9 @@ Frankのインストール、`frank setup`、`frank build`を実行してから�
 
 また、当サンプルコードを操作するテストスクリプトをMonkeyTalk/ディレクトリ下に追加しました。
 
+詳しくは、@IT連載『スマホ向け無料システムテスト自動化ツール(1) [システムテスト自動化の基礎知識とMonkeyTalkの使い方](http://www.atmarkit.co.jp/ait/articles/1407/16/news037.html) 』を参照してください。
+
+
 
 ###7.1 OS X Server/Bots
 
