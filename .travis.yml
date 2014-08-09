@@ -4,8 +4,6 @@ cache: cocoapods
 before_install:
   - sudo easy_install cpp-coveralls
   - sudo gem install cocoapods
-  - brew update
-  - brew upgrade xctool
 
 script:
   - make coverage
