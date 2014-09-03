@@ -3,20 +3,20 @@ PODS:
   - CocoaHTTPServer (2.3):
     - CocoaAsyncSocket
     - CocoaLumberjack
-  - CocoaLumberjack (1.9.1):
+  - CocoaLumberjack (2.0.0-beta):
+    - CocoaLumberjack/CLI
+    - CocoaLumberjack/Core
     - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (1.9.1)
-  - CocoaLumberjack/Extensions (1.9.1):
+  - CocoaLumberjack/CLI (2.0.0-beta):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Core (2.0.0-beta)
+  - CocoaLumberjack/Extensions (2.0.0-beta):
     - CocoaLumberjack/Core
   - GHUnitIOS (0.5.8)
-  - KIF (3.0.5):
+  - KIF (3.0.7):
     - KIF/XCTest
-  - KIF/XCTest (3.0.5)
-  - Kiwi/ARC (2.2.4)
-  - Kiwi/NonARC (2.2.4)
-  - Kiwi/XCTest (2.2.4):
-    - Kiwi/ARC
-    - Kiwi/NonARC
+  - KIF/XCTest (3.0.7)
+  - Kiwi (2.3.0)
   - NLTHTTPStubServer (0.4.0):
     - CocoaHTTPServer (>= 2.3)
   - OCHamcrest (4.0.1)
@@ -25,13 +25,13 @@ PODS:
     - OCHamcrest (~> 4.0)
     - TPWeakProxy (~> 1.0)
   - TPWeakProxy (1.0.0)
-  - tuneup_js (1.2.0)
+  - tuneup_js (1.2.1)
 
 DEPENDENCIES:
   - GHUnitIOS
   - GHUnitIOS (~> 0.5.8)
   - KIF (~> 3.0)
-  - Kiwi/XCTest
+  - Kiwi
   - NLTHTTPStubServer
   - OCHamcrest (~> 4.0)
   - OCMock (~> 2.2)
@@ -41,15 +41,15 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   CocoaHTTPServer: 217df4cba4e48803db2480f97b805aaad2230dd1
-  CocoaLumberjack: 94accd5749f5c5d15134c8d50f34a973aed8ef69
+  CocoaLumberjack: aadc76d7bd6c839ca84b38ed50cbf89d7cf8c693
   GHUnitIOS: 0fe5a01896673a7768ee76158fbae02ad8fde853
-  KIF: ad5ddd4e8cb213e6b3e2e166fba9308e3b542e6e
-  Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
+  KIF: 685ab7b49c1092732b7cb3106cc957366b01e225
+  Kiwi: 54bece5b35564d9b8e03c608d926f1a22fcfc589
   NLTHTTPStubServer: 3e5f9a5e7ce69670a6b2a04578956cdc41c31e85
   OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
   OCMock: 6db79185520e24f9f299548f2b8b07e41d881bd5
   OCMockito: eca2670b3ce4a457d316b046a36d6f2b980a4da7
   TPWeakProxy: a23251ba7fbe268c93f809cc072ef834f5063798
-  tuneup_js: 6480db5316a17f8793638d307fa0b6fd686f9cdc
+  tuneup_js: f50649368806307f4ef1a523ffe04ff09f5b0445
 
 COCOAPODS: 0.33.1

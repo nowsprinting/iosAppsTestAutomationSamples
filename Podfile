@@ -6,7 +6,7 @@ target :GHUnitTests, :exclusive => true do
     pod 'GHUnitIOS', '~> 0.5.8'
 end
 target :KiwiTests, :exclusive => true do
-    pod 'Kiwi/XCTest'
+    pod 'Kiwi'
 end
 target :OCHamcrestTests, :exclusive => true do
     pod 'OCHamcrest', '~> 4.0'
