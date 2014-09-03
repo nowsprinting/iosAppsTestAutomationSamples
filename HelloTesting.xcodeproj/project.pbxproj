@@ -34,7 +34,6 @@
 		1D1E69611862C8FD004FFBF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0458F71852C088008D5B7E /* CoreGraphics.framework */; };
 		1D1E69621862C8FD004FFBF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0458F91852C088008D5B7E /* UIKit.framework */; };
 		1D1E69961862CA0D004FFBF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E69931862CA0D004FFBF9 /* main.m */; };
-		1D1E69971862CA0D004FFBF9 /* NLTHTTPStubServerTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D1E69941862CA0D004FFBF9 /* NLTHTTPStubServerTests-Info.plist */; };
 		1D1E699B1862CA21004FFBF9 /* testavatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D1E69991862CA21004FFBF9 /* testavatar.png */; };
 		1D1E699E1862CBF5004FFBF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D1E699C1862CBF5004FFBF9 /* InfoPlist.strings */; };
 		1D1E699F1862CC70004FFBF9 /* GravatarAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5909661858D13B00F59B2F /* GravatarAccessor.m */; };
@@ -98,7 +97,6 @@
 		1DB727CF18D63C7900B990E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0458F51852C088008D5B7E /* Foundation.framework */; };
 		1DB727D018D63C7900B990E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0458F91852C088008D5B7E /* UIKit.framework */; };
 		1DB727DF18D63D3100B990E1 /* AddFirstCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D442DF418D265DA0086EB18 /* AddFirstCustomer.m */; };
-		1DB727E018D63D3700B990E1 /* KIFTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F8B1518AD1F0E00801A92 /* KIFTests-Info.plist */; };
 		1DB727E118D63D3B00B990E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F8B1618AD1F0E00801A92 /* InfoPlist.strings */; };
 		1DCE3E6D185F6EB900755532 /* Customer2Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE3E6C185F6EB900755532 /* Customer2Test.m */; };
 		1DCE3E6F1860BD2800755532 /* GravatarAccessorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCE3E6E1860BD2800755532 /* GravatarAccessorTest.m */; };
@@ -840,7 +838,7 @@
 			name = KIFTests;
 			productName = KIFTests;
 			productReference = 1DB727CC18D63C7800B990E1 /* KIFTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		1DCE3E7C1861A7EE00755532 /* OCHamcrestTests */ = {
 			isa = PBXNativeTarget;
@@ -908,7 +906,7 @@
 		1D0458EA1852C088008D5B7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Koji Hasegawa";
 				TargetAttributes = {
 					1D0459181852C088008D5B7E = {
@@ -987,7 +985,6 @@
 			files = (
 				1D1E699B1862CA21004FFBF9 /* testavatar.png in Resources */,
 				1D1E699E1862CBF5004FFBF9 /* InfoPlist.strings in Resources */,
-				1D1E69971862CA0D004FFBF9 /* NLTHTTPStubServerTests-Info.plist in Resources */,
 				1D630C281959C9F000021986 /* CustomerPreview.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1030,7 +1027,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB727E018D63D3700B990E1 /* KIFTests-Info.plist in Resources */,
 				1DB727E118D63D3B00B990E1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1584,7 +1580,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1624,7 +1619,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1695,7 +1689,6 @@
 		1D04592E1852C088008D5B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1718,7 +1711,6 @@
 		1D04592F1852C088008D5B7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1738,7 +1730,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BB57947AED8410AAEFCB00C /* Pods-NLTHTTPStubServerTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1757,7 +1748,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BB57947AED8410AAEFCB00C /* Pods-NLTHTTPStubServerTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1772,7 +1762,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFF91FC23A6C4F6AA8B7343E /* Pods-GHUnitTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1792,7 +1781,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFF91FC23A6C4F6AA8B7343E /* Pods-GHUnitTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1808,7 +1796,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95E259F8D63248539409409E /* Pods-OCMockTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1832,7 +1819,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95E259F8D63248539409409E /* Pods-OCMockTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1896,7 +1882,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9DC1735E3E54A2EAD31251D /* Pods-KIFTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1920,7 +1905,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9DC1735E3E54A2EAD31251D /* Pods-KIFTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1940,7 +1924,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E67967BE76646038384ADAA /* Pods-OCHamcrestTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1964,7 +1947,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E67967BE76646038384ADAA /* Pods-OCHamcrestTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1984,7 +1966,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23944A98270A46CDBC269007 /* Pods-OCMockitoTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				CLANG_ENABLE_MODULES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2009,7 +1990,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23944A98270A46CDBC269007 /* Pods-OCMockitoTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				CLANG_ENABLE_MODULES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2030,7 +2010,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15F75D18DBEB40E5ABFD3F62 /* Pods-KiwiTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -2054,7 +2033,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15F75D18DBEB40E5ABFD3F62 /* Pods-KiwiTests.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloTesting.app/HelloTesting";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
