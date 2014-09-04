@@ -42,8 +42,8 @@ describe(@"GravatarAccessor test using mock", ^{
             //Test Stubを準備する
             //このテストはNSHTTPURLResponseインスタンスでも可能ですが、スタブを使うほうがシンプルに書けます
             NSHTTPURLResponse *response = [NSHTTPURLResponse mock];
-            [[response stubAndReturn:theValue(200)] statusCode];
-            [[response stubAndReturn:@"image/png"] MIMEType];
+            [response stub:@selector(statusCode) andReturn:theValue(200)];
+            [response stub:@selector(MIMEType) andReturn:@"image/png"];
             
             [sut connection:nil didReceiveResponse:response];
             
@@ -79,8 +79,8 @@ describe(@"GravatarAccessor test using mock", ^{
             
             //SUTに通信成功状態をセット
             NSHTTPURLResponse *response = [NSHTTPURLResponse mock];
-            [[response stubAndReturn:theValue(200)] statusCode];
-            [[response stubAndReturn:@"image/png"] MIMEType];
+            [response stub:@selector(statusCode) andReturn:theValue(200)];
+            [response stub:@selector(MIMEType) andReturn:@"image/png"];
             [sut connection:nil didReceiveResponse:response];
             
             [sut connectionDidFinishLoading:nil];
@@ -94,8 +94,8 @@ describe(@"GravatarAccessor test using mock", ^{
             
             //SUTに通信失敗状態をセット
             NSHTTPURLResponse *response = [NSHTTPURLResponse mock];
-            [[response stubAndReturn:theValue(500)] statusCode];
-            [[response stubAndReturn:@"image/png"] MIMEType];
+            [response stub:@selector(statusCode) andReturn:theValue(500)];
+            [response stub:@selector(MIMEType) andReturn:@"image/png"];
             [sut connection:nil didReceiveResponse:response];
             
             [sut connectionDidFinishLoading:nil];

@@ -24,11 +24,11 @@ describe(@"CustomerDetailView test using stub", ^{
         //Test Stubを準備する
         Customer *customer = [[Customer alloc] init];
         customer.name = @"岩田 貫一";
-        [[customer stubAndReturn:@"myemailaddress@example.com"] mail];
-        [[customer stubAndReturn:theValue(33U)] age];
-        [[customer stubAndReturn:@"男性"] genderString];
-        [[customer stubAndReturn:@"M1層"] divisionString];
-        [[customer stubAndReturn:theValue(YES)] isInDivision:DivisionM1];
+        [customer stub:@selector(mail) andReturn:@"myemailaddress@example.com"];
+        [customer stub:@selector(age) andReturn:theValue(33U)];
+        [customer stub:@selector(genderString) andReturn:@"男性"];
+        [customer stub:@selector(divisionString) andReturn:@"M1層"];
+        [customer stub:@selector(isInDivision:) andReturn:theValue(YES) withArguments:theValue(DivisionM1), nil];
         
         [sut setCustomer:customer];
         
