@@ -1,9 +1,11 @@
-DESTINATION = "name=iPhone Retina (4-inch),OS=7.1"
 export PATH := ${PATH}:/usr/local/bin:~/oclint/bin
+DST_OS=8.0
+DST_NAME=iPhone 4s
 
 test:
 	xctool -workspace HelloTesting.xcworkspace -scheme HelloTesting \
-		-sdk iphonesimulator -destination ${DESTINATION} \
+		-sdk iphonesimulator \
+		-destination "platform=iOS Simulator,OS=${DST_OS},name=${DST_NAME}" \
 		-reporter junit:test-reports/xctest-report.xml \
 		GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=NO \
 		GCC_GENERATE_TEST_COVERAGE_FILES=NO \
@@ -18,7 +20,8 @@ frank-test:
 
 coverage:
 	xctool -workspace HelloTesting.xcworkspace -scheme HelloTesting \
-		-sdk iphonesimulator -destination ${DESTINATION} \
+		-sdk iphonesimulator \
+		-destination "platform=iOS Simulator,OS=${DST_OS},name=${DST_NAME}" \
 		-reporter junit:test-reports/xctest-report.xml \
 		GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES \
 		GCC_GENERATE_TEST_COVERAGE_FILES=YES \
