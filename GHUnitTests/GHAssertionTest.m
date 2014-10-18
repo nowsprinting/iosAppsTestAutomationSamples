@@ -4,7 +4,7 @@
 //  Copyright (c) 2014 Koji Hasegawa. All rights reserved.
 //
 
-#import <GHUnitIOS/GHUnit.h>
+#import <GHUnit/GHUnit.h>
 
 /** 検証に使用する例外クラス定義 */
 @interface OriginalException : NSException

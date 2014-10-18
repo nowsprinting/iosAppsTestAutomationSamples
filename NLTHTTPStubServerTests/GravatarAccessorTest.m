@@ -4,7 +4,7 @@
 //  Copyright (c) 2014 Koji Hasegawa. All rights reserved.
 //
 
-#import <GHUnitIOS/GHUnit.h>
+#import <GHUnit/GHUnit.h>
 #import "NLTHTTPStubServer.h"
 #import "GravatarAccessor.h"
 

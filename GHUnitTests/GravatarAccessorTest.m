@@ -4,7 +4,7 @@
 //  Copyright (c) 2014 Koji Hasegawa. All rights reserved.
 //
 
-#import <GHUnitIOS/GHUnit.h>
+#import <GHUnit/GHUnit.h>
 #import "GravatarAccessor.h"
 
 //非同期のテストを行なう場合にはGHAsyncTestCaseを継承します
