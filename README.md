@@ -20,6 +20,8 @@
 
 ##セットアップ手順
 
+下記コマンドでセットアップを行ないます。
+
     $ git clone git@github.com:nowsprinting/iosAppsTestAutomationSamples.git
     $ cd iosAppsTestAutomationSamples/
     $ pod install
@@ -31,17 +33,29 @@
 
 ##Chapterごとの特記事項
 
-###Chapter 2〜4
+###2.2.1 不具合修正の前後をテストする
 
-上記手順でセットアップを行えば、そのまま動作します。ただし、以下については、変更を入れたブランチがありますので参照してください。
+本文中の変更を入れた状態のブランチ[2.2.1](https://github.com/nowsprinting/iosAppsTestAutomationSamples/tree/2.2.1)がありますので、参考にしてください。
 
-- 2.2.1 不具合修正の前後をテストする
-- 3.2.5 UIViewの表示テスト
+ブランチの切り替えは、上記セットアップを済ませた状態から下記コマンドで行ないます。
+
+    $ git checkout 2.2.1
+
+
+###3.2.5 UIViewの表示テスト
+
+本文中の変更を入れた状態のブランチ[3.2.5](https://github.com/nowsprinting/iosAppsTestAutomationSamples/tree/3.2.5)がありますので、参考にしてください。
+
+ブランチの切り替えは、上記セットアップを済ませた状態から下記コマンドで行ないます。
+
+    $ git checkout 3.2.5
 
 
 ###5.3 Frank
 
 Frankのインストール、`frank setup`、`frank build`を実行してから、`cucumber`コマンドで実行してください。プロジェクトのビルド設定などの詳細は書籍を参照してください。
+
+なお、**FrankがXcode 5.1以降のバージョンに追随していないため、動作しません。**
 
 
 ###5.4 MonkeyTalk
@@ -49,10 +63,7 @@ Frankのインストール、`frank setup`、`frank build`を実行してから�
 **5.4.4 MonkeyTalkエージェントのアプリへの組み込み** の手順で追加したビルドターゲット `HelloTestingWithMonkeyTalkAgent`を追加していますが、MonkeyTalkのエージェントのスタティックライブラリは同梱してありません。  
 ビルドターゲット設定の"Build Phases"->"Link Binary With Libraries"で、MonkeyTalkエージェントのファイルパスを設定してご利用ください。
 
-また、当サンプルコードを操作するテストスクリプトをMonkeyTalk/ディレクトリ下に追加しました。
-
-詳しくは、@IT連載『スマホ向け無料システムテスト自動化ツール(1) [システムテスト自動化の基礎知識とMonkeyTalkの使い方](http://www.atmarkit.co.jp/ait/articles/1407/16/news037.html) 』を参照してください。
-
+また、本リポジトリのサンプルアプリを操作するテストスクリプトをMonkeyTalk/ディレクトリ下に追加しました。こちらについて詳しくは、@IT連載「[スマホ向け無料システムテスト自動化ツール](http://www.atmarkit.co.jp/ait/kw/smapho_testtool.html)」第1回「[システムテスト自動化の基礎知識とMonkeyTalkの使い方](http://www.atmarkit.co.jp/ait/articles/1407/16/news037.html) 」を参照してください。
 
 
 ###7.1 OS X Server/Bots
