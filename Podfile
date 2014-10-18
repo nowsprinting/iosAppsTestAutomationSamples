@@ -1,9 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '6.0'
 
 pod 'tuneup_js'
 
 target :GHUnitTests, :exclusive => true do
-    pod 'GHUnitIOS', '~> 0.5.8'
+    pod 'GHUnit'
 end
 target :KiwiTests, :exclusive => true do
     pod 'Kiwi'
@@ -18,7 +19,7 @@ target :OCMockitoTests, :exclusive => true do
     pod 'OCMockito', '~> 1.0'
 end
 target :NLTHTTPStubServerTests, :exclusive => true do
-    pod 'GHUnitIOS'
+    pod 'GHUnit'
     pod 'NLTHTTPStubServer'
 end
 target :KIFTests, :exclusive => true do
