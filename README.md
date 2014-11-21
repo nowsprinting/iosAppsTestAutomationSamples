@@ -55,7 +55,9 @@
 
 Frankのインストール、`frank setup`、`frank build`を実行してから、`cucumber`コマンドで実行してください。プロジェクトのビルド設定などの詳細は書籍を参照してください。
 
-なお、**FrankがXcode 5.1以降のバージョンに追随していないため、動作しません。**
+なお、Xcode 5.1以降でFrankが動作しない（iOSシミュレータの起動に失敗する）問題があがっています。現在、Frankの公式リポジトリが下記に変更（移動）されてメンテナンスは引き継がれているようです。
+
+- [TestingWithFrank/Frank](https://github.com/TestingWithFrank/Frank)
 
 
 ###5.4 MonkeyTalk
