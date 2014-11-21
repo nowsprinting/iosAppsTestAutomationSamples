@@ -1,5 +1,5 @@
 export PATH := ${PATH}:/usr/local/bin:~/oclint/bin
-DST_OS=8.0
+DST_OS=8.1
 DST_NAME=iPhone 4s
 
 test:
