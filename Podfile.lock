@@ -3,15 +3,14 @@ PODS:
   - CocoaHTTPServer (2.3):
     - CocoaAsyncSocket
     - CocoaLumberjack
-  - CocoaLumberjack (2.0.0-beta2):
-    - CocoaLumberjack/CLI
-    - CocoaLumberjack/Core
+  - CocoaLumberjack (2.0.0-beta4):
+    - CocoaLumberjack/Default
     - CocoaLumberjack/Extensions
-  - CocoaLumberjack/CLI (2.0.0-beta2):
+  - CocoaLumberjack/Core (2.0.0-beta4)
+  - CocoaLumberjack/Default (2.0.0-beta4):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Core (2.0.0-beta2)
-  - CocoaLumberjack/Extensions (2.0.0-beta2):
-    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0-beta4):
+    - CocoaLumberjack/Default
   - GHUnit (0.5.9)
   - KIF (3.0.8):
     - KIF/XCTest
@@ -38,7 +37,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   CocoaHTTPServer: 217df4cba4e48803db2480f97b805aaad2230dd1
-  CocoaLumberjack: 956d3fb98fed498a13d56499f262c975ef431c98
+  CocoaLumberjack: 24153b24b17d853d7182b22b128971fb98e8cb18
   GHUnit: 4ea5a83295587ab226c458fc30dfdb1616fba633
   KIF: 2db5e8cf59136dd1267d49cca0d55883389b09d3
   Kiwi: 54bece5b35564d9b8e03c608d926f1a22fcfc589
@@ -48,4 +47,4 @@ SPEC CHECKSUMS:
   OCMockito: 57b8c4bb54ff3a4a14eb2174f9e57faf9f56efb6
   tuneup_js: f50649368806307f4ef1a523ffe04ff09f5b0445
 
-COCOAPODS: 0.34.2
+COCOAPODS: 0.34.4
