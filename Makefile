@@ -16,7 +16,7 @@ test:
 
 coverage-and-gcovr: test
 	mkdir -p coverage-reports
-	gcovr -r . --object-directory build \
+	gcovr --object-directory build \
 		--exclude Pods --exclude ".*Tests" --exclude ".*\.h" \
 		--xml > coverage-reports/coverage.xml
 
