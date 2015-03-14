@@ -6,7 +6,8 @@ before_install:
   - gem install cocoapods
 
 script:
-  - make coverage
+  - make test REPORTER=pretty
 
 after_success:
   - make send-to-coveralls
+
