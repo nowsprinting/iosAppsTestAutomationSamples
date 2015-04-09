@@ -11,3 +11,6 @@ script:
 after_success:
   - make send-to-coveralls
 
+notifications:
+  slack:
+    secure: VSGP2XC0rtcQQ4VTOoNjb81+FA1y6NDW8Ul/OZMNtWiRRDyjUossBNGD5MQgzHuyPYjOi6vLivg5pH1kbpIP+0ZFvzxroz8Ogr/WQPjR7ajENuw7Dl6zsWGFMTTT0gQlI1Fx25g3d1CHLcj85xvUgacEwG1GKTIs3aglenEuxz4=
