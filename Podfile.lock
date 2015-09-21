@@ -1,23 +1,26 @@
 PODS:
-  - CocoaAsyncSocket (7.3.5)
+  - CocoaAsyncSocket (7.4.2)
   - CocoaHTTPServer (2.3):
     - CocoaAsyncSocket
     - CocoaLumberjack
-  - CocoaLumberjack (1.9.2):
-    - CocoaLumberjack/Extensions (= 1.9.2)
-  - CocoaLumberjack/Core (1.9.2)
-  - CocoaLumberjack/Extensions (1.9.2):
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
     - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
   - GHUnit (0.5.9)
-  - KIF (3.0.8):
-    - KIF/XCTest (= 3.0.8)
-  - KIF/XCTest (3.0.8)
-  - Kiwi (2.3.1)
+  - KIF (3.3.0):
+    - KIF/Core (= 3.3.0)
+  - KIF/Core (3.3.0)
+  - Kiwi (2.4.0)
   - NLTHTTPStubServer (0.4.0):
     - CocoaHTTPServer (>= 2.3)
-  - OCHamcrest (4.0.1)
+  - OCHamcrest (4.2.0)
   - OCMock (2.2.4)
-  - OCMockito (1.3.1):
+  - OCMockito (1.4.0):
     - OCHamcrest (~> 4.0)
   - tuneup_js (1.2.3)
 
@@ -32,16 +35,16 @@ DEPENDENCIES:
   - tuneup_js
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
-  CocoaHTTPServer: 217df4cba4e48803db2480f97b805aaad2230dd1
-  CocoaLumberjack: 205769c032b5fef85b92472046bcc8b7e7c8a817
-  GHUnit: 4ea5a83295587ab226c458fc30dfdb1616fba633
-  KIF: 2db5e8cf59136dd1267d49cca0d55883389b09d3
-  Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
-  NLTHTTPStubServer: 3e5f9a5e7ce69670a6b2a04578956cdc41c31e85
-  OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
-  OCMock: 6db79185520e24f9f299548f2b8b07e41d881bd5
-  OCMockito: 57b8c4bb54ff3a4a14eb2174f9e57faf9f56efb6
-  tuneup_js: f3e54786001c34889b7054c0d8c134da0272cfd8
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  GHUnit: c54e0019313bd49a575aecc502e30597f4b6664e
+  KIF: 0a82046d06f3648799cac522d2d0f7934214caac
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  NLTHTTPStubServer: a075a2a76f18f0f1af25ef8a95f4ba6b02f28e06
+  OCHamcrest: c14c0b3f4c4e99363e5b87d97bae38c4438b6d5d
+  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
+  OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
+  tuneup_js: bb9bd3060b8a115501bdf2b668f6497a806d5df3
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.38.2
