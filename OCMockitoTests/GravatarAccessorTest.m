@@ -37,12 +37,17 @@
 @implementation GravatarAccessorTest{
     /** テスト対象オブジェクト */
     GravatarAccessor *_sut;
+
+    /** NSURLConnectionDataDelegateのメソッドでnilが警告されるので、空のオブジェクトを用意する */
+    NSURLConnection *_conn;
 }
 
 - (void)setUp{
     [super setUp];
     _sut = [[GravatarAccessor alloc]
                 initWithMail:@"myemailaddress@example.com" delegate:nil];
+
+    _conn = [[NSURLConnection alloc] init];
 }
 
 - (void)testDidReceiveResponse{
@@ -52,7 +57,7 @@
     [given([response statusCode]) willReturnInteger:200];
     [given([response MIMEType]) willReturn:@"image/png"];
     
-    [_sut connection:nil didReceiveResponse:response];
+    [_sut connection:_conn didReceiveResponse:response];
     
     //レスポンスからインスタンスフィールドにコピーされていることを確認
     XCTAssertEqual(200, _sut.statusCode);
@@ -70,7 +75,7 @@
     NSMutableData *mockMutableData = mock([NSMutableData class]);
     _sut.responseAccumulator = mockMutableData;
 
-    [_sut connection:nil didReceiveData:dummyData];
+    [_sut connection:_conn didReceiveData:dummyData];
     
     //内部で[appendData:]が呼ばれたことを検証
     [verify(mockMutableData) appendData:dummyData];
@@ -85,9 +90,9 @@
     NSHTTPURLResponse *response = mock([NSHTTPURLResponse class]);
     [given([response statusCode]) willReturnInteger:200];
     [given([response MIMEType]) willReturn:@"image/png"];
-    [_sut connection:nil didReceiveResponse:response];
+    [_sut connection:_conn didReceiveResponse:response];
     
-    [_sut connectionDidFinishLoading:nil];
+    [_sut connectionDidFinishLoading:_conn];
 
     //内部で[responseAvatar:]が呼ばれたことを検証
     [verify(mockDelegate) responseAvatar:nil];
@@ -102,9 +107,9 @@
     NSHTTPURLResponse *response = mock([NSHTTPURLResponse class]);
     [given([response statusCode]) willReturnInteger:500];
     [given([response MIMEType]) willReturn:@"image/png"];
-    [_sut connection:nil didReceiveResponse:response];
+    [_sut connection:_conn didReceiveResponse:response];
     
-    [_sut connectionDidFinishLoading:nil];
+    [_sut connectionDidFinishLoading:_conn];
     
     //内部で[responseError:]が呼ばれたことを検証
     [verify(mockDelegate) responseError:@"Bad statusCode:500"];
@@ -116,7 +121,7 @@
     _sut.delegate = mockDelegate;
     
     NSError *testError = [NSError errorWithDomain:@"d" code:-9 userInfo:nil];
-    [_sut connection:nil didFailWithError:testError];
+    [_sut connection:_conn didFailWithError:testError];
     
     //内部で[responseError:]が呼ばれたことを検証
     [verify(mockDelegate) responseError:@"Error! domain:d, code:-9"];

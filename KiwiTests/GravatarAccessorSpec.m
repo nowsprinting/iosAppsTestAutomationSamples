@@ -31,10 +31,13 @@ SPEC_BEGIN(GravatarAccessorSpec)
 
 describe(@"GravatarAccessor test using mock", ^{
     __block GravatarAccessor *sut;
+    __block NSURLConnection *conn;  //NSURLConnectionDataDelegateのメソッドでnilが警告されるので、空のオブジェクトを用意する
     
     beforeEach(^{
         sut = [[GravatarAccessor alloc]
                initWithMail:@"myemailaddress@example.com" delegate:nil];
+
+        conn = [[NSURLConnection alloc] init];
     });
     
     describe(@"didReceiveResponse test using stub", ^{
@@ -45,7 +48,7 @@ describe(@"GravatarAccessor test using mock", ^{
             [response stub:@selector(statusCode) andReturn:theValue(200)];
             [response stub:@selector(MIMEType) andReturn:@"image/png"];
             
-            [sut connection:nil didReceiveResponse:response];
+            [sut connection:conn didReceiveResponse:response];
             
             //レスポンスからインスタンスフィールドにコピーされていることを確認
             [[theValue(sut.statusCode) should] equal:theValue(200)];
@@ -66,7 +69,7 @@ describe(@"GravatarAccessor test using mock", ^{
             [[mockMutableData should] receive:@selector(appendData:) withArguments:dummyData];
             sut.responseAccumulator = mockMutableData;
             
-            [sut connection:nil didReceiveData:dummyData];
+            [sut connection:conn didReceiveData:dummyData];
         });
     });
     
@@ -81,9 +84,9 @@ describe(@"GravatarAccessor test using mock", ^{
             NSHTTPURLResponse *response = [NSHTTPURLResponse mock];
             [response stub:@selector(statusCode) andReturn:theValue(200)];
             [response stub:@selector(MIMEType) andReturn:@"image/png"];
-            [sut connection:nil didReceiveResponse:response];
+            [sut connection:conn didReceiveResponse:response];
             
-            [sut connectionDidFinishLoading:nil];
+            [sut connectionDidFinishLoading:conn];
         });
         
         it(@"failure case", ^{
@@ -96,9 +99,9 @@ describe(@"GravatarAccessor test using mock", ^{
             NSHTTPURLResponse *response = [NSHTTPURLResponse mock];
             [response stub:@selector(statusCode) andReturn:theValue(500)];
             [response stub:@selector(MIMEType) andReturn:@"image/png"];
-            [sut connection:nil didReceiveResponse:response];
+            [sut connection:conn didReceiveResponse:response];
             
-            [sut connectionDidFinishLoading:nil];
+            [sut connectionDidFinishLoading:conn];
         });
     });
     
@@ -110,7 +113,7 @@ describe(@"GravatarAccessor test using mock", ^{
             sut.delegate = mockDelegate;
             
             NSError *testError = [NSError errorWithDomain:@"d" code:-9 userInfo:nil];
-            [sut connection:nil didFailWithError:testError];
+            [sut connection:conn didFailWithError:testError];
         });
     });
 });
