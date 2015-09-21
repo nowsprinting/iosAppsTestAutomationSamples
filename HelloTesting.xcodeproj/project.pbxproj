@@ -93,7 +93,6 @@
 		1DA0C4301956289C00FA41D0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA0C42F1956289C00FA41D0 /* CFNetwork.framework */; };
 		1DA0C431195628A200FA41D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D296AC318575E2E00127A8A /* QuartzCore.framework */; };
 		1DB557E518CF86C5002EFA06 /* CustomerTestExtracted.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB557E418CF86C5002EFA06 /* CustomerTestExtracted.m */; };
-		1DB727CE18D63C7900B990E1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB727CD18D63C7900B990E1 /* SenTestingKit.framework */; };
 		1DB727CF18D63C7900B990E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0458F51852C088008D5B7E /* Foundation.framework */; };
 		1DB727D018D63C7900B990E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0458F91852C088008D5B7E /* UIKit.framework */; };
 		1DB727DF18D63D3100B990E1 /* AddFirstCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D442DF418D265DA0086EB18 /* AddFirstCustomer.m */; };
@@ -247,8 +246,7 @@
 		1DA0C42D1956289400FA41D0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1DA0C42F1956289C00FA41D0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1DB557E418CF86C5002EFA06 /* CustomerTestExtracted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTestExtracted.m; sourceTree = "<group>"; };
-		1DB727CC18D63C7800B990E1 /* KIFTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DB727CD18D63C7900B990E1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1DB727CC18D63C7800B990E1 /* KIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCE3E6C185F6EB900755532 /* Customer2Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer2Test.m; sourceTree = "<group>"; };
 		1DCE3E6E1860BD2800755532 /* GravatarAccessorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarAccessorTest.m; sourceTree = "<group>"; };
 		1DCE3E701860CC2800755532 /* CustomerDetailViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerDetailViewTest.m; sourceTree = "<group>"; };
@@ -373,7 +371,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB727CE18D63C7900B990E1 /* SenTestingKit.framework in Frameworks */,
 				1DB727D018D63C7900B990E1 /* UIKit.framework in Frameworks */,
 				1DB727CF18D63C7900B990E1 /* Foundation.framework in Frameworks */,
 				41F14FB57F304F55BFF7BBC5 /* libPods-KIFTests.a in Frameworks */,
@@ -445,7 +442,7 @@
 				1DCE3E951861CF8E00755532 /* OCMockitoTests.xctest */,
 				1DCE3EB318621C2700755532 /* KiwiTests.xctest */,
 				1D1E695F1862C8FD004FFBF9 /* NLTHTTPStubServerTests.app */,
-				1DB727CC18D63C7800B990E1 /* KIFTests.octest */,
+				1DB727CC18D63C7800B990E1 /* KIFTests.xctest */,
 				1DA0C427195626FB00FA41D0 /* HelloTestingWithMonkeyTalkAgent.app */,
 			);
 			name = Products;
@@ -471,7 +468,6 @@
 				C61BE606CDD746F69978BDD1 /* libPods-KiwiTests.a */,
 				7184D8E7100C4164912E1275 /* libPods.a */,
 				64D5C901F1194F60A1B1F9A7 /* libPods-KIFTests.a */,
-				1DB727CD18D63C7900B990E1 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -861,8 +857,8 @@
 			);
 			name = KIFTests;
 			productName = KIFTests;
-			productReference = 1DB727CC18D63C7800B990E1 /* KIFTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			productReference = 1DB727CC18D63C7800B990E1 /* KIFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		1DCE3E7C1861A7EE00755532 /* OCHamcrestTests */ = {
 			isa = PBXNativeTarget;
@@ -1933,7 +1929,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nowsprinting.iostestautomationbook.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -1953,7 +1948,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nowsprinting.iostestautomationbook.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
