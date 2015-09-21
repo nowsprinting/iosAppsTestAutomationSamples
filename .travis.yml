@@ -2,7 +2,7 @@ language: objective-c
 cache: cocoapods
 
 before_install:
-  - sudo easy_install cpp-coveralls
+  - pip install cpp-coveralls --user `whoami`
   - gem install cocoapods
 
 script:
