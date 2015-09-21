@@ -16,4 +16,4 @@
 #endif
 
 
-#define GRAVATAR_SERVER @"http://www.gravatar.com"
+#define GRAVATAR_SERVER @"https://www.gravatar.com"
