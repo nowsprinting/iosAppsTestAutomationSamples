@@ -1,6 +1,6 @@
 export PATH := ${PATH}:/usr/local/bin:~/oclint/bin
 REPORTER=junit:test-reports/xctest-report.xml
-DST_OS=8.1
+DST_OS=9.0
 DST_NAME=iPhone 4s
 
 test:
