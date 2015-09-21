@@ -69,7 +69,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
     if(self.statusCode!=200){
-        NSString *message = [NSString stringWithFormat:@"Bad statusCode:%d", self.statusCode];
+        NSString *message = [NSString stringWithFormat:@"Bad statusCode:%zd", self.statusCode];
         [self.delegate responseError:message];
         
     }else if(!([self.MIMEType isEqual:@"image/png"]
@@ -84,7 +84,7 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-    NSString *message = [NSString stringWithFormat:@"Error! domain:%@, code:%d", error.domain, error.code];
+    NSString *message = [NSString stringWithFormat:@"Error! domain:%@, code:%zd", error.domain, error.code];
     [self.delegate responseError:message];
 }
 
@@ -95,7 +95,7 @@
 - (NSString*)md5from:(NSString*)string{
     const char *ptr = [string UTF8String];
     unsigned char md5Buffer[CC_MD5_DIGEST_LENGTH];
-    CC_MD5(ptr, strlen(ptr), md5Buffer);
+    CC_MD5(ptr, (CC_LONG)strlen(ptr), md5Buffer);
     
     NSMutableString *md5 = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
     for(int i=0; i<CC_MD5_DIGEST_LENGTH; i++){

@@ -40,13 +40,13 @@
         NSString *name = self.detailItem.name;
         NSString *mail = self.detailItem.mail;
         NSString *gender = self.detailItem.genderString;
-        NSString *age = [NSString stringWithFormat:@"%d", self.detailItem.age];
+        NSString *age = [NSString stringWithFormat:@"%zd", self.detailItem.age];
         NSString *division = self.detailItem.divisionString;
         NSString *body = [NSString stringWithFormat:template, name, mail, gender, age, division];
         [self.webView loadHTMLString:body baseURL:nil];
         
     }else{
-        NSLog(@"error domain:%@, code:%d", error.domain, error.code);
+        NSLog(@"error domain:%@, code:%zd", error.domain, error.code);
     }
 
     if (self.detailItem) {

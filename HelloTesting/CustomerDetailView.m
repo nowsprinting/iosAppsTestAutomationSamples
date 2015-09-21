@@ -22,7 +22,7 @@
     self.nameLabel.text = customer.name;
     self.mailLabel.text = customer.mail;
     self.genderLabel.text = customer.genderString;
-    self.ageLabel.text = [NSString stringWithFormat:@"%d", customer.age];
+    self.ageLabel.text = [NSString stringWithFormat:@"%zd", customer.age];
     self.marketDivisionLabel.text = customer.divisionString;
     
     GravatarAccessor *gravatar = [[GravatarAccessor alloc] initWithMail:customer.mail delegate:self];
