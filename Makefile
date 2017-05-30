@@ -1,7 +1,7 @@
 export PATH := ${PATH}:/usr/local/bin:~/oclint/bin
 REPORTER=junit:test-reports/xctest-report.xml
-DST_OS=9.0
-DST_NAME=iPhone 4s
+DST_OS=10.3
+DST_NAME=iPhone 7
 
 test:
 	xctool -workspace HelloTesting.xcworkspace -scheme HelloTesting \
