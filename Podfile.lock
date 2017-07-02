@@ -1,24 +1,22 @@
 PODS:
-  - CocoaAsyncSocket (7.4.2)
+  - CocoaAsyncSocket (7.6.1)
   - CocoaHTTPServer (2.3):
     - CocoaAsyncSocket
     - CocoaLumberjack
-  - CocoaLumberjack (2.0.1):
-    - CocoaLumberjack/Default (= 2.0.1)
-    - CocoaLumberjack/Extensions (= 2.0.1)
-  - CocoaLumberjack/Core (2.0.1)
-  - CocoaLumberjack/Default (2.0.1):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.1):
+  - CocoaLumberjack (3.2.0):
+    - CocoaLumberjack/Default (= 3.2.0)
+    - CocoaLumberjack/Extensions (= 3.2.0)
+  - CocoaLumberjack/Default (3.2.0)
+  - CocoaLumberjack/Extensions (3.2.0):
     - CocoaLumberjack/Default
-  - GHUnit (0.5.9)
-  - KIF (3.3.0):
-    - KIF/Core (= 3.3.0)
-  - KIF/Core (3.3.0)
+  - GHUnit (0.6.0)
+  - KIF (3.5.2):
+    - KIF/Core (= 3.5.2)
+  - KIF/Core (3.5.2)
   - Kiwi (2.4.0)
   - NLTHTTPStubServer (0.4.0):
     - CocoaHTTPServer (>= 2.3)
-  - OCHamcrest (4.2.0)
+  - OCHamcrest (4.3.0)
   - OCMock (2.2.4)
   - OCMockito (1.4.0):
     - OCHamcrest (~> 4.0)
@@ -35,16 +33,18 @@ DEPENDENCIES:
   - tuneup_js
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
   CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
-  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
-  GHUnit: c54e0019313bd49a575aecc502e30597f4b6664e
-  KIF: 0a82046d06f3648799cac522d2d0f7934214caac
+  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
+  GHUnit: 327085549049e5a5f5f317a1e240a0ced5482f44
+  KIF: f2a6025bb3f11692df675054a134d43a9ec2d7db
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   NLTHTTPStubServer: a075a2a76f18f0f1af25ef8a95f4ba6b02f28e06
-  OCHamcrest: c14c0b3f4c4e99363e5b87d97bae38c4438b6d5d
+  OCHamcrest: cd63d27f48a266d4412c0b295b01b8f0940efa81
   OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
   OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
   tuneup_js: bb9bd3060b8a115501bdf2b668f6497a806d5df3
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: aabe7bb616a431dcbd451f93ef9e776cf58755ba
+
+COCOAPODS: 1.2.1
